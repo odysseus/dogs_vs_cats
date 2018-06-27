@@ -63,7 +63,7 @@ for layer in base_model.layers:
 print(model.summary())
 
 # The optimizer
-adam = Adam(lr=1e-4)
+adam = Adam(lr=1e-5)
 
 # Compile using binary cross entropy as loss function
 model.compile(loss='binary_crossentropy',

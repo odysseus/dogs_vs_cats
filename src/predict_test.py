@@ -8,7 +8,7 @@ from keras.preprocessing.image import ImageDataGenerator
 img_width, img_height = 224, 224
 batch_size = 20
 test_data_dir = '../data/test'
-model_name = 'transfer_vgg16'
+model_name = 'raw_resnet'
 
 test_datagen = ImageDataGenerator(rescale=1.0/ 255)
 
