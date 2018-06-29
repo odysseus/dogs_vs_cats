@@ -8,7 +8,7 @@ from keras.preprocessing.image import ImageDataGenerator
 img_width, img_height = 224, 224
 batch_size = 20
 test_data_dir = '../data/test'
-model_name = 'raw_resnet'
+model_name = 'minnet'
 
 test_datagen = ImageDataGenerator(rescale=1.0/ 255)
 
@@ -29,7 +29,8 @@ model = load_model(f"../weights/{model_name}.h5")
 
 pred = model.predict_generator(
         test_generator, 
-        steps = 12500 // batch_size
+        steps = 12500 // batch_size,
+        verbose=1
         ).flatten()
 
 with open(f"../predictions/{model_name}_predictions.csv", 'w') as outfile:
