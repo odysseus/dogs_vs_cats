@@ -34,6 +34,8 @@ model_checkpoint = ModelCheckpoint(
         period=1)
 
 # Create the model
+# This is a simple stack of convolutions and pooling layers
+# No dropout or batch normalization though they can easily be added if needed
 model = Sequential()
 
 model.add(Conv2D(32, (3, 3), padding='same', input_shape=input_shape))
