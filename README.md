@@ -20,4 +20,10 @@ Additional Python libraries may be required based on your setup. While I haven't
 ## Project Download
 
 1. The project git can be found here: [Github](https://github.com/odysseus/dogs_vs_cats)
+  - `data` is not present in the project git but would contains three subfolders: `test`, `train` and `validation`, where `test` contains the submission test images.
+  - `img` contains images for the writeup and does not have any bearing on the code.
+  - `predictions` contains predictions for Kaggle submission.
+  - Code files are in the `src` directory.
+  - `vis` is simply a Jupyter notebook for creating graphs and can be safely ignored.
+  - The `weights` directory contains csv files for the model runs.
 2. Github cannot handle the model files, so the individual models can be loaded via [Google Drive](https://drive.google.com/open?id=11ayvW8_AEXkY42S7sNZIn5aeWtnylx--)
